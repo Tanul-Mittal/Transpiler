@@ -1,0 +1,15 @@
+vidhi fibonacci(ank n) ank {
+    agar (n <= 1) {
+        wapas n;
+    }
+    wapas fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+vidhi main() {
+    likho("Fibonacci Series:");
+    
+    karo (ank i = 0; i < 10; i = i + 1) {
+        likho(fibonacci(i));
+    }
+    
+    wapas 0;}

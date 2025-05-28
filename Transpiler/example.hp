@@ -1,0 +1,44 @@
+# Generates Fibonacci series using recursion and iteration
+
+vidhi fib_recursive(ank n) ank {
+    agar (n <= 1) {
+        wapas n;
+    }
+    wapas fib_recursive(n - 1) + fib_recursive(n - 2);
+}
+
+vidhi fib_iterative(ank n) ank {
+    agar (n <= 1) {
+        wapas n;
+    }
+    
+    ank a = 0;
+    ank b = 1;
+    ank result = 0;
+    
+    karo (ank i = 2; i <= n; i = i + 1) {
+        result = a + b;
+        a = b;
+        b = result;
+    }
+    
+    wapas result;
+}
+
+vidhi main() {
+    likho("Fibonacci Series Generator");
+    
+    ank limit = 10;
+    
+    likho("First 10 Fibonacci numbers (iterative):");
+    karo (ank i = 0; i < limit; i = i + 1) {
+        likho(fib_iterative(i));
+    }
+    
+    likho("First 10 Fibonacci numbers (recursive):");
+    karo (ank i = 0; i < limit; i = i + 1) {
+        likho(fib_recursive(i));
+    }
+    
+    wapas 0;
+}

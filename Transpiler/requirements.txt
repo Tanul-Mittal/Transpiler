@@ -1,0 +1,8 @@
+# Core dependencies
+pyinstaller>=5.7.0   # For creating standalone binary executables
+
+# Testing dependencies
+pytest>=7.0.0        # For running test suite
+pytest-cov>=4.1.0    # For test coverage reports
+
+nuitka>=0.6.17        # For creating standalone binary executables
